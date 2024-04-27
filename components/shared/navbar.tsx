@@ -20,11 +20,17 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "../ui/tooltip";
+import { cn } from "@/lib/utils";
 
-const Navbar = () => {
+const Navbar = ({ className }: { className: string }) => {
     return (
-        <div className='w-12 mt-2 mb-2 p-2 flex flex-col justify-between items-center gap-y-2 border h-full rounded-lg bg-neutral-900 shadow-lg'>
-            <div>
+        <div
+            className={cn(
+                className,
+                "relative h-full w-12 mt-2 mb-2 p-2 flex flex-col justify-between items-center gap-y-2 border rounded-lg bg-neutral-900 shadow-lg"
+            )}
+        >
+            <div className=''>
                 <TooltipProvider>
                     <Tooltip>
                         <TooltipTrigger asChild>
@@ -91,22 +97,6 @@ const Navbar = () => {
                 </TooltipProvider>
             </div>
             <div>
-                <SignedOut>
-                    <SignInButton>
-                        <TooltipProvider>
-                            <Tooltip>
-                                <TooltipTrigger>
-                                    <Button size={"icon"} variant={"secondary"}>
-                                        <LockClosedIcon className='w-5 h-5' />
-                                    </Button>
-                                </TooltipTrigger>
-                                <TooltipContent className='text-white bg-black'>
-                                    <p>Sign In</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </TooltipProvider>
-                    </SignInButton>
-                </SignedOut>
                 <SignedIn>
                     <SignOutButton>
                         {/* <Button size={"icon"} variant={"secondary"}>
