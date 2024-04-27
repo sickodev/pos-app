@@ -22,14 +22,14 @@ Follow the steps below to configure and setup the project
 - Open the project in your favourite IDE or text editor (I prefer Visual Studio Code)
 - Run the following command to start the project
     ``` npm run dev ```
-- The project is now ruuning at [localhost:3000](http://localhost:3000)
+- The project is now running at [localhost:3000](http://localhost:3000).
 
 ## Contribute to the project
 
 Contributions to the POS App project are welcomed and encouraged! Here's how you can contribute:
 
 1. **Fork the Repository**: Start by forking the repository to your own GitHub account.
-2. **Clone the Repository**: Clone the forked repository to your local machine using the git clone command.
+2. **Clone the Repository**: Clone the forked repository to your local machine using the ```git clone``` command.
 3. **Create a Branch**: Create a new branch for your contributions. Use a descriptive branch name that reflects the purpose of your changes.
 4. **Make Changes**: Make your desired changes to the codebase. Ensure that your changes adhere to the project's coding standards and conventions.
 5. **Test Changes**: Test your changes thoroughly to ensure they work as expected and do not introduce any regressions.
