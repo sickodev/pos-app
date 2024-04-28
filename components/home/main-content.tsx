@@ -8,6 +8,7 @@ import { Skeleton } from "../ui/skeleton";
 import TopCards from "../shared/top-cards";
 import BarGraph from "../shared/bar-graph";
 import { useEffect, useState } from "react";
+import LineChart from "../shared/line-chart";
 
 const MainContent = () => {
     const { isSignedIn, isLoaded, user } = useUser();
@@ -76,7 +77,9 @@ const MainContent = () => {
                 <div className='col-span-3 row-span-1'>
                     <TopCards />
                 </div>
-                <div className='md:col-span-2 col-span-2 md:row-span-3 row-span-1 h-full w-full bg-white'></div>
+                <div className='md:col-span-2 col-span-2 md:row-span-3 row-span-1'>
+                    <LineChart />
+                </div>
                 <div className='md:col-span-3 col-span-2 md:row-span-2 row-span-1 rounded-lg w-full'>
                     <BarGraph />
                 </div>

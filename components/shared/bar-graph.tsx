@@ -64,7 +64,7 @@ const BarGraph = () => {
     return (
         <MotionCard>
             <div className='p-1 space-y-2 border border-secondary-foreground/30 rounded-lg'>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center py-1'>
                     <div className='flex items-center space-x-2'>
                         <div className='bg-primary-foreground p-1 rounded'>
                             <BarChartIcon className='h-5 w-5' />
@@ -102,13 +102,8 @@ const BarGraph = () => {
                                 dataKey={"pv"}
                                 fill='#888aed'
                                 name='expenditure'
-                                className='bg-red-500'
-                            ></Bar>
-                            <Bar
-                                dataKey={"uv"}
-                                fill='#fffaef'
-                                name='profit'
-                            ></Bar>
+                            />
+                            <Bar dataKey={"uv"} fill='#fffaef' name='profit' />
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
